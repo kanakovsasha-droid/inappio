@@ -533,19 +533,9 @@ section{padding:clamp(80px,10vw,150px) var(--pad);position:relative;scroll-margi
 .final .mark{width:76px;height:76px;margin:0 auto 30px}
 .final h2{margin-bottom:20px}
 .final .lead{margin:0 auto}
-.form{
-  display:flex;gap:11px;max-width:560px;margin:40px auto 0;flex-wrap:wrap;
-}
-.form input{
-  flex:1;min-width:220px;padding:16px 22px;border-radius:999px;
-  background:#fff;border:1px solid var(--line);color:var(--text);
-  box-shadow:var(--shadow-sm);font-size:16px;outline:none;transition:.35s;
-}
-.form input::placeholder{color:var(--muted-2)}
-.form input:focus{border-color:rgba(1,101,251,.55);background:#fff;box-shadow:0 0 0 4px rgba(1,101,251,.12)}
+.cta-tg{display:flex;justify-content:center;margin:40px auto 0}
+.btn-tg svg{width:19px;height:19px;fill:currentColor;flex:none}
 .form-note{font-size:13px;color:var(--muted-2);margin-top:16px;font-weight:300}
-.thanks{display:none;margin-top:28px;font-size:18px;color:var(--brand);font-weight:500}
-.thanks.on{display:block;animation:rowin .6s var(--ease)}
 
 /* ---------- подвал ---------- */
 footer{padding:56px var(--pad);border-top:1px solid var(--line-soft)}
@@ -553,6 +543,7 @@ footer{padding:56px var(--pad);border-top:1px solid var(--line-soft)}
 .foot .brand{font-size:18px}
 .foot .brand .mark{width:28px;height:28px}
 .foot nav{display:flex;gap:24px;margin-left:auto;flex-wrap:wrap}
+.foot .foot-legal{width:100%;margin-left:0;gap:24px;font-size:13px;padding-top:4px}
 .foot a:hover{color:var(--text)}
 
 /* ---------- появление при скролле ----------
@@ -1061,12 +1052,13 @@ POST <span class="s">https://rtb.inappio.io/v1/bid</span>
     <div class="reveal" style="--d:.06s"><h2 class="rise">Готовы подключить Inappio?</h2></div>
     <p class="lead reveal" style="--d:.12s">Запустите современные In-App рекламные кампании с использованием AI, данных и премиальных Fullscreen-форматов.</p>
 
-    <form class="form reveal" id="lead" style="--d:.18s" novalidate>
-      <input type="email" name="email" placeholder="Рабочая почта" required>
-      <button type="submit" class="btn btn-primary">Подключиться к платформе</button>
-    </form>
+    <div class="cta-tg reveal" style="--d:.18s">
+      <a href="https://t.me/traffguru" class="btn btn-primary btn-tg" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.9 4.3 18.6 20c-.25 1.1-.9 1.37-1.83.85l-5.05-3.72-2.44 2.35c-.27.27-.5.5-1.02.5l.36-5.14L17.4 6.4c.4-.36-.09-.56-.63-.2L6.2 12.9l-5-1.56c-1.09-.34-1.11-1.09.23-1.61l19.55-7.54c.9-.34 1.7.2 1.4 2.1z"/></svg>
+        Написать в Telegram
+      </a>
+    </div>
     <p class="form-note reveal" style="--d:.24s">Ответим в течение рабочего дня и пришлём документацию по интеграции.</p>
-    <p class="thanks" id="thanks">Спасибо! Мы получили заявку и свяжемся с вами.</p>
   </div>
 </section>
 
@@ -1082,7 +1074,11 @@ POST <span class="s">https://rtb.inappio.io/v1/bid</span>
       <a href="#fraud">Антифрод</a>
       <a href="#integration">Интеграция</a>
     </nav>
-    <span style="width:100%;color:var(--muted-2);font-size:13px">© 2026 Inappio · AI-платформа премиальной In-App рекламы</span>
+    <nav class="foot-legal">
+      <a href="privacy.html">Политика конфиденциальности</a>
+      <a href="terms.html">Пользовательское соглашение</a>
+    </nav>
+    <span style="width:100%;color:var(--muted-2);font-size:13px">© 2026 Inappio · AI-платформа премиальной In-App рекламы<br>ООО «Спарта» · ИНН 7722719975</span>
   </div>
 </footer>
 
@@ -1313,16 +1309,6 @@ POST <span class="s">https://rtb.inappio.io/v1/bid</span>
   }
 
   /* ---------- форма заявки ---------- */
-  const form = document.getElementById('lead');
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    const email = form.email.value.trim();
-    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { form.email.focus(); return; }
-    // TODO: заменить на реальный эндпоинт —
-    // fetch('/api/leads', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({email})})
-    form.style.display = 'none';
-    document.getElementById('thanks').classList.add('on');
-  });
 })();
 </script>
 <!-- Рамка айфона: веб-компонент @sneas/telephone v1 (MIT, github.com/sneas/telephone) -->

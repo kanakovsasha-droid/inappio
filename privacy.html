@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Политика конфиденциальности — Inappio</title>
+<meta name="description" content="Сайт inappio.ru не собирает персональные данные: нет форм, регистрации, счётчиков и cookie. Какие технические сведения попадают в журналы сервера и как с нами связаться.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://inappio.ru/privacy.html">
+<link rel="icon" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/logo-512.png">
+
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://inappio.ru/privacy.html">
+<meta property="og:site_name" content="Inappio">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Политика конфиденциальности — Inappio">
+<meta property="og:description" content="Сайт inappio.ru не собирает персональные данные: нет форм, регистрации, счётчиков и cookie. Какие технические сведения попадают в журналы сервера и как с нами связаться.">
+<meta property="og:image" content="https://inappio.ru/assets/og.jpg">
+<meta property="og:image:secure_url" content="https://inappio.ru/assets/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<style>
+@font-face { font-family:'Onest'; font-style:normal; font-weight:400; font-display:swap; src:url(assets/fonts/Onest-400-latin.woff2) format('woff2'); unicode-range:U+20-7e; }
+@font-face { font-family:'Onest'; font-style:normal; font-weight:500; font-display:swap; src:url(assets/fonts/Onest-500-latin.woff2) format('woff2'); unicode-range:U+20-7e; }
+@font-face { font-family:'Onest'; font-style:normal; font-weight:600; font-display:swap; src:url(assets/fonts/Onest-600-latin.woff2) format('woff2'); unicode-range:U+20-7e; }
+@font-face { font-family:'Onest'; font-style:normal; font-weight:700; font-display:swap; src:url(assets/fonts/Onest-700-latin.woff2) format('woff2'); unicode-range:U+20-7e; }
+@font-face { font-family:'Onest'; font-style:normal; font-weight:300; font-display:swap; src:url(assets/fonts/Onest-300-cyrillic.woff2) format('woff2'); unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116; }
+@font-face { font-family:'Onest'; font-style:normal; font-weight:400; font-display:swap; src:url(assets/fonts/Onest-400-cyrillic.woff2) format('woff2'); unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116; }
+@font-face { font-family:'Onest'; font-style:normal; font-weight:500; font-display:swap; src:url(assets/fonts/Onest-500-cyrillic.woff2) format('woff2'); unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116; }
+@font-face { font-family:'Onest'; font-style:normal; font-weight:600; font-display:swap; src:url(assets/fonts/Onest-600-cyrillic.woff2) format('woff2'); unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116; }
+@font-face { font-family:'Onest'; font-style:normal; font-weight:700; font-display:swap; src:url(assets/fonts/Onest-700-cyrillic.woff2) format('woff2'); unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116; }
+@font-face { font-family:'JetBrains Mono'; font-style:normal; font-weight:400; font-display:swap; src:url(assets/fonts/JetBrainsMono-400-latin.woff2) format('woff2'); unicode-range:U+20-7e; }
+@font-face { font-family:'JetBrains Mono'; font-style:normal; font-weight:400; font-display:swap; src:url(assets/fonts/JetBrainsMono-400-cyrillic.woff2) format('woff2'); unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116; }
+@font-face { font-family:'Unbounded'; font-style:normal; font-weight:600; font-display:swap; src:url(assets/fonts/Unbounded-600-subset.woff2) format('woff2'); unicode-range:U+2c,U+2f-39,U+61,U+69,U+6e-70; }
+
+:root{
+  --brand:#0165FB; --brand-2:#4D8DFF; --brand-ink:#0B4FD0;
+  --grad:linear-gradient(135deg,#0165FB 0%,#3E86FF 60%,#6FA5FF 100%);
+  --bg:#FFFFFF; --surface:#F7F9FC; --surface-2:#F1F4FA;
+  --glass:rgba(255,255,255,.72);
+  --line:rgba(11,18,32,.11); --line-soft:rgba(11,18,32,.06);
+  --text:#0A0E16; --muted:#5A6478; --muted-2:#8B94A6;
+  --shadow-sm:0 1px 2px rgba(11,18,32,.05),0 6px 20px rgba(11,18,32,.05);
+  --r-sm:18px; --r:28px;
+  --glyph:url('assets/logo-glyph-512.png');
+  --pad:clamp(20px,5vw,64px); --maxw:880px;
+  --ease:cubic-bezier(.16,1,.3,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  background:
+    radial-gradient(58% 30% at 12% 0%,rgba(1,101,251,.11),transparent 62%),
+    radial-gradient(60% 26% at 92% 88%,rgba(1,101,251,.07),transparent 64%),
+    var(--bg);
+  color:var(--text);
+  font-family:'Onest',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  font-size:17px;line-height:1.62;-webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+::selection{background:rgba(1,101,251,.20)}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+
+/* ---------- шапка ---------- */
+header{position:sticky;top:0;z-index:50;padding:14px var(--pad);
+  background:var(--glass);backdrop-filter:saturate(1.6) blur(18px);
+  -webkit-backdrop-filter:saturate(1.6) blur(18px);
+  border-bottom:1px solid var(--line-soft)}
+.nav{max-width:1240px;margin:0 auto;display:flex;align-items:center;gap:18px}
+.brand{display:flex;align-items:center;gap:11px;font-size:21px}
+.mark{position:relative;flex:none;border-radius:19.7%;background:var(--brand);
+  box-shadow:0 10px 26px rgba(1,101,251,.30),0 2px 6px rgba(11,18,32,.10);isolation:isolate;
+  width:34px;height:34px}
+.mark::before{content:'';position:absolute;inset:0;background:#fff;
+  -webkit-mask:var(--glyph) center/contain no-repeat;mask:var(--glyph) center/contain no-repeat}
+.wm{font-family:'Unbounded',sans-serif;font-weight:600;letter-spacing:-.04em}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:11px 22px;border-radius:999px;font-weight:600;font-size:15px;letter-spacing:-.01em;
+  transition:transform .35s var(--ease),box-shadow .35s var(--ease),background .35s var(--ease);
+  white-space:nowrap;margin-left:auto}
+.btn-ghost{border:1px solid var(--line);background:#fff;color:var(--text);box-shadow:var(--shadow-sm)}
+.btn-ghost:hover{background:var(--surface);border-color:rgba(1,101,251,.4);transform:translateY(-2px)}
+
+/* ---------- документ ---------- */
+main{max-width:var(--maxw);margin:0 auto;padding:clamp(48px,7vw,92px) var(--pad) 40px}
+.eyebrow{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--brand);
+  display:inline-flex;align-items:center;gap:10px}
+.eyebrow::before{content:'';width:26px;height:1px;background:linear-gradient(90deg,transparent,var(--brand))}
+h1{font-size:clamp(32px,5vw,50px);line-height:1.06;letter-spacing:-.03em;font-weight:700;margin:18px 0 14px}
+.meta{color:var(--muted-2);font-size:15px;margin-bottom:36px}
+.intro{font-size:clamp(17px,1.6vw,19px);color:var(--muted);font-weight:300;line-height:1.55;
+  padding:22px 26px;background:var(--surface);border-radius:var(--r-sm);
+  border:1px solid var(--line-soft);margin-bottom:44px}
+
+nav.toc{background:#fff;border:1px solid var(--line-soft);border-radius:var(--r-sm);
+  padding:24px 26px;margin-bottom:52px;box-shadow:var(--shadow-sm)}
+nav.toc b{display:block;font-size:13px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--muted-2);font-weight:600;margin-bottom:14px}
+nav.toc ol{list-style:none;counter-reset:t;display:grid;gap:9px}
+nav.toc li{counter-increment:t;display:flex;gap:12px;align-items:baseline;font-size:16px}
+nav.toc li::before{content:counter(t);font-family:'JetBrains Mono',monospace;font-size:12px;
+  color:var(--brand);flex:none;width:18px}
+nav.toc a{color:var(--muted)}
+nav.toc a:hover{color:var(--brand-ink)}
+
+section{margin-bottom:44px;scroll-margin-top:96px}
+h2{font-size:clamp(21px,2.4vw,27px);line-height:1.2;letter-spacing:-.02em;font-weight:700;
+  margin-bottom:16px;display:flex;gap:14px;align-items:baseline}
+h2 span{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--brand);
+  font-weight:400;flex:none;padding-top:2px}
+h3{font-size:17px;font-weight:600;letter-spacing:-.01em;margin:24px 0 10px}
+p{margin-bottom:14px;color:var(--muted);font-weight:300}
+p strong,li strong{color:var(--text);font-weight:600}
+ul,ol.num{margin:0 0 16px 0;padding-left:0;list-style:none;display:grid;gap:10px}
+ul li{position:relative;padding-left:24px;color:var(--muted);font-weight:300}
+ul li::before{content:'';position:absolute;left:6px;top:11px;width:6px;height:6px;
+  border-radius:50%;background:var(--brand);opacity:.55}
+ol.num{counter-reset:n}
+ol.num li{counter-increment:n;position:relative;padding-left:32px;color:var(--muted);font-weight:300}
+ol.num li::before{content:counter(n) '.';position:absolute;left:0;top:0;
+  font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--brand)}
+a.link{color:var(--brand-ink);text-decoration:underline;text-underline-offset:3px;
+  text-decoration-thickness:1px;text-decoration-color:rgba(1,101,251,.35)}
+a.link:hover{text-decoration-color:var(--brand)}
+
+.card{background:#fff;border:1px solid var(--line-soft);border-radius:var(--r-sm);
+  padding:26px 28px;box-shadow:var(--shadow-sm);margin:22px 0}
+.card dl{display:grid;grid-template-columns:auto 1fr;gap:12px 22px;font-size:16px;align-items:baseline}
+.card dt{color:var(--muted-2);font-weight:400;white-space:nowrap}
+.card dd{font-weight:500}
+.mono{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:15px;letter-spacing:-.01em}
+.note{border-left:2px solid var(--brand);padding:4px 0 4px 20px;margin:20px 0;
+  color:var(--muted);font-weight:300;font-size:16px}
+.todo{background:#FFF3D6;border:1px dashed #E0A93B;color:#8A5B00;
+  padding:2px 8px;border-radius:6px;font-weight:600;font-size:15px}
+
+footer{padding:48px var(--pad);border-top:1px solid var(--line-soft);margin-top:24px}
+.foot{max-width:1240px;margin:0 auto;display:flex;align-items:center;gap:22px;
+  flex-wrap:wrap;color:var(--muted-2);font-size:14px}
+.foot .brand{font-size:18px}
+.foot .brand .mark{width:28px;height:28px}
+.foot nav{display:flex;gap:22px;margin-left:auto;flex-wrap:wrap}
+.foot a:hover{color:var(--text)}
+.foot .legal{width:100%;font-size:13px;color:var(--muted-2)}
+
+@media (max-width:640px){
+  .card dl{grid-template-columns:1fr;gap:4px 0}
+  .card dd{margin-bottom:10px}
+  h2{gap:10px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a href="/" class="brand"><span class="mark"></span><span class="wm">inappio</span></a>
+    <a href="/" class="btn btn-ghost">На главную</a>
+  </div>
+</header>
+
+<main>
+  <span class="eyebrow">Правовая информация</span>
+  <h1>Политика в отношении обработки персональных данных</h1>
+  <p class="meta">Редакция от 9 сентября 2026 года · сайт inappio.ru</p>
+
+  <p class="intro">Коротко: сайт inappio.ru не собирает персональные данные. На нём нет форм, регистрации, счётчиков посещаемости и рекламных пикселей. Ниже подробно о том, какие технические сведения всё же попадают в журналы веб-сервера и как с нами связаться. Документ подготовлен в соответствии с Федеральным законом от 27.07.2006 № 152-ФЗ «О персональных данных».</p>
+
+  <nav class="toc">
+    <b>Содержание</b>
+    <ol>
+      <li><a href="#p1">Общие положения</a></li>
+      <li><a href="#p2">Основные понятия</a></li>
+      <li><a href="#p3">Сайт не собирает персональные данные</a></li>
+      <li><a href="#p4">Технические данные</a></li>
+      <li><a href="#p5">Связь с нами</a></li>
+      <li><a href="#p6">Передача третьим лицам</a></li>
+      <li><a href="#p7">Файлы cookie и отслеживание</a></li>
+      <li><a href="#p8">Права и обращения</a></li>
+      <li><a href="#p9">Изменения политики</a></li>
+      <li><a href="#p10">Реквизиты</a></li>
+    </ol>
+  </nav>
+
+  <section id="p1">
+    <h2><span>01</span>Общие положения</h2>
+    <p>Владельцем сайта <a class="link" href="https://inappio.ru/">inappio.ru</a> (далее — «Сайт») является ООО «Спарта», ИНН 7722719975 (далее — «Компания», «мы»). Сайт представляет собой информационный ресурс о рекламной платформе Inappio.</p>
+    <p>Политика описывает подход Компании к персональным данным посетителей Сайта и действует в отношении всех сведений, которые Компания может получить в связи с посещением Сайта.</p>
+    <p>Действующая редакция постоянно доступна по адресу <span class="mono">https://inappio.ru/privacy.html</span>.</p>
+  </section>
+
+  <section id="p2">
+    <h2><span>02</span>Основные понятия</h2>
+    <ul>
+      <li><strong>Персональные данные</strong> — любая информация, относящаяся к прямо или косвенно определённому либо определяемому физическому лицу.</li>
+      <li><strong>Обработка персональных данных</strong> — любое действие с данными: сбор, запись, хранение, использование, передача, обезличивание, удаление, уничтожение.</li>
+      <li><strong>Пользователь</strong> — посетитель Сайта.</li>
+    </ul>
+  </section>
+
+  <section id="p3">
+    <h2><span>03</span>Сайт не собирает персональные данные</h2>
+    <p class="note">На Сайте <strong>нет форм обратной связи, полей ввода, регистрации и личного кабинета</strong>. Мы не просим и не принимаем через Сайт имя, адрес электронной почты, номер телефона и любые другие сведения о посетителе.</p>
+    <p>На Сайте также не установлены системы веб-аналитики, счётчики посещаемости, рекламные пиксели и иные инструменты отслеживания сторонних сервисов. Мы не составляем профили посетителей, не сегментируем аудиторию Сайта и не передаём сведения о ней в рекламные сети.</p>
+    <p>Единственный способ связаться с нами — перейти в мессенджер Telegram по ссылке на Сайте. Этот переход описан в разделе 5.</p>
+  </section>
+
+  <section id="p4">
+    <h2><span>04</span>Технические данные</h2>
+    <p>Как и любой сайт в интернете, inappio.ru работает через веб-сервер, который автоматически фиксирует служебные сведения о каждом запросе:</p>
+    <ul>
+      <li>IP-адрес, с которого выполнен запрос;</li>
+      <li>тип и версия браузера и операционной системы (заголовок User-Agent);</li>
+      <li>дата и время обращения, адрес запрошенной страницы, адрес страницы-источника перехода.</li>
+    </ul>
+    <p>Эти сведения формируются автоматически на стороне хостинг-провайдера, необходимы для работоспособности и защиты Сайта от автоматизированных атак и хранятся не более <strong>шести месяцев</strong>. Компания не использует их для идентификации личности посетителя, не сопоставляет с иными сведениями и не передаёт третьим лицам, кроме случаев, предусмотренных законом.</p>
+  </section>
+
+  <section id="p5">
+    <h2><span>05</span>Связь с нами</h2>
+    <p>Кнопка на Сайте ведёт в мессенджер Telegram, в диалог <span class="mono">@traffguru</span>. Переход осуществляется на внешний ресурс: Сайт не передаёт при этом никаких сведений о вас и не получает данных вашего аккаунта.</p>
+    <p>Дальнейшая переписка ведётся в Telegram и регулируется <a class="link" href="https://telegram.org/privacy" rel="nofollow noopener" target="_blank">политикой конфиденциальности Telegram</a>. Сведения, которые вы сообщите нам в переписке добровольно (имя, название компании, контакты), используются исключительно для ответа на ваше обращение и обсуждения возможного сотрудничества. Мы не передаём их третьим лицам и не используем для рассылок.</p>
+    <p>Вы в любой момент можете попросить нас удалить переписку и сообщённые в ней сведения — напишите об этом в том же диалоге.</p>
+  </section>
+
+  <section id="p6">
+    <h2><span>06</span>Передача третьим лицам</h2>
+    <p>Компания не продаёт и не передаёт сведения о посетителях Сайта третьим лицам, за исключением следующих случаев:</p>
+    <ul>
+      <li><strong>Поставщик хостинга.</strong> Сайт размещён на внешней инфраструктуре, технические журналы формируются и хранятся на её стороне.</li>
+      <li><strong>Государственные органы.</strong> Сведения могут быть предоставлены по мотивированному запросу суда, органов дознания и следствия, иных уполномоченных органов в случаях, предусмотренных законом.</li>
+    </ul>
+    <h3>Трансграничная передача</h3>
+    <p>Статические файлы Сайта отдаются через глобальную сеть доставки контента, серверы которой расположены за пределами Российской Федерации. Поэтому технические журналы обращений могут обрабатываться на территории иностранных государств. Персональные данные посетителей при этом не передаются, поскольку Сайт их не собирает.</p>
+  </section>
+
+  <section id="p7">
+    <h2><span>07</span>Файлы cookie и отслеживание</h2>
+    <p>Сайт <strong>не использует файлы cookie</strong> — ни собственные, ни сторонние. На Сайте не установлены счётчики посещаемости, рекламные пиксели, пиксели социальных сетей и иные системы отслеживания. Баннер о согласии на использование cookie отсутствует, потому что согласовывать нечего.</p>
+  </section>
+
+  <section id="p8">
+    <h2><span>08</span>Права и обращения</h2>
+    <p>Если вы считаете, что Компания обрабатывает ваши персональные данные, вы вправе:</p>
+    <ul>
+      <li>получить подтверждение факта обработки и сведения, предусмотренные частью 7 статьи 14 152-ФЗ;</li>
+      <li>требовать уточнения, блокирования или уничтожения данных;</li>
+      <li>отозвать согласие на обработку;</li>
+      <li>обжаловать действия Компании в Роскомнадзоре или в суде.</li>
+    </ul>
+    <p>Обращение направляйте в Telegram <span class="mono">@traffguru</span>. Ответ будет дан в течение <strong>десяти рабочих дней</strong> с даты получения обращения.</p>
+    <p>Надзорный орган — Федеральная служба по надзору в сфере связи, информационных технологий и массовых коммуникаций (Роскомнадзор), <a class="link" href="https://rkn.gov.ru/" rel="nofollow noopener" target="_blank">rkn.gov.ru</a>.</p>
+  </section>
+
+  <section id="p9">
+    <h2><span>09</span>Изменения политики</h2>
+    <p>Компания вправе изменять настоящую Политику. Новая редакция вступает в силу с момента размещения на этой странице. Дата актуальной редакции указана в начале документа. Если на Сайте когда-либо появятся формы или иные инструменты сбора данных, Политика будет обновлена до их запуска.</p>
+  </section>
+
+  <section id="p10">
+    <h2><span>10</span>Реквизиты</h2>
+    <div class="card">
+      <dl>
+        <dt>Владелец сайта</dt><dd>ООО «Спарта»</dd>
+        <dt>ИНН</dt><dd class="mono">7722719975</dd>
+        <dt>Сайт</dt><dd class="mono">https://inappio.ru</dd>
+        <dt>Связь</dt><dd class="mono"><a class="link" href="https://t.me/traffguru" target="_blank" rel="noopener">Telegram @traffguru</a></dd>
+      </dl>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="foot">
+    <a href="/" class="brand"><span class="mark"></span><span class="wm">inappio</span></a>
+    <nav>
+      <a href="/privacy.html">Политика конфиденциальности</a>
+      <a href="/terms.html">Пользовательское соглашение</a>
+    </nav>
+    <span class="legal">© 2026 Inappio · ООО «Спарта» · ИНН 7722719975</span>
+  </div>
+</footer>
+
+</body>
+</html>
